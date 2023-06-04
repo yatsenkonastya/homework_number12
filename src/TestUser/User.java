@@ -18,6 +18,7 @@ public class User {
     public boolean isActive;
     static public double amoundSpendMoney;
     public  double purchasePrice = 0;
+    static double allDiscount;
 
     public  int getAge() {
         return age;
@@ -57,5 +58,14 @@ public class User {
         static public void printTotalAmoundOfSpentMoney() {
             System.out.println("Усі користувачі витратили " + amoundSpendMoney);
         }
+    public void addDiscountForUser(int percent) {
+        double discount = this.purchasePrice * percent / 100.0;
+        allDiscount += discount;
+        System.out.println(this.userName + " має знижку " + discount);
+    }
+    //  function that displays discount for ALL users
+    static public void addDiscount() {
+        System.out.println("Загальна знижка для користувачів " + allDiscount);
+    }
 
     }

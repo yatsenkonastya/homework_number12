@@ -15,6 +15,7 @@ public class Main {
         firstUser.makePurchase(132);
         firstUser.makePurchase(167);
         firstUser.purchaseOfUser();
+        firstUser.addDiscountForUser(15);
         System.out.println("\n");
 
         User secondUser = new User();
@@ -38,9 +39,12 @@ public class Main {
         thirdUser.makePurchase(345);
         thirdUser.makePurchase(387);
         thirdUser.purchaseOfUser();
+        thirdUser.addDiscountForUser(25);
         System.out.println("\n");
 
+
         User.printTotalAmoundOfSpentMoney();
+        User.addDiscount();
 
     }
 
