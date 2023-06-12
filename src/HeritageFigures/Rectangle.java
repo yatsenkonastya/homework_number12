@@ -25,13 +25,13 @@ public class Rectangle extends Shape {
     public void calculateArea(){
         super.calculateArea();
         areaOfRectangle = calculateSide(x3, y3, x2, y2) * calculateSide(x2, y2, x1, y1);
-        System.out.println("Площа " + this.name + " дорівнює " + areaOfRectangle);
+        System.out.println("Площа " + this.name + "  буде дорівнювати " + areaOfRectangle);
     }
     @Override
     public void calculatePerimeter(){
         super.calculatePerimeter();
         perimeterOfRectangle = 2 * (calculateSide(x3, y3, x2, y2) + calculateSide(x2, y2, x1, y1));
-        System.out.println("Периметр " + this.name + " дорівнює " + perimeterOfRectangle);
+        System.out.println("Периметр " + this.name + " буде дорівнювати " + perimeterOfRectangle);
     }
     @Override
     public String toString() {

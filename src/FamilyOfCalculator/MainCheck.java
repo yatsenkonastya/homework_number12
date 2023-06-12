@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MainCheck {
     static Scanner scan = new Scanner(System.in);
     public static void main(String[] args){
-        System.out.println(" Choose calculator:\\s\n" +
+        System.out.println(" Please choose calculator:\\s\n" +
                         "                1 - accounting calculator\\s\n" +
                         "                2 - engineer calculator\n" +
                         "                3 - financial calculator\n" +

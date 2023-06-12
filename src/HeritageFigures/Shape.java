@@ -14,6 +14,6 @@ public class Shape {
     }
     public void paint(String color){
         this.color = color;
-        System.out.println("Обраний колір " + this.color);
+        System.out.println("Обраний колір це " + this.color);
     }
 }

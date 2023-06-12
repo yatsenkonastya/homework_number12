@@ -11,7 +11,7 @@ public class EngineerCalculator extends SimpleCalculator {
 
     public static void sinNumber(double number) {
         if (number > 360) {
-            System.out.println("Please enter value less than 360");
+            System.out.println("Please enter value less than 360 degrees");
         } else {
             System.out.println("Sin of " + number + " = " + Math.sin(number));
         }

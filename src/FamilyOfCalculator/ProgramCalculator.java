@@ -40,6 +40,6 @@ public class ProgramCalculator extends SimpleCalculator{
             arrayBit[arrayBit.length - 1 - i] = temp;
             i++;
         }
-        System.out.println("Number " + printNumberHex + " in bits " + Arrays.toString(arrayBit));
+        System.out.println("Number of " + printNumberHex + " in bits " + Arrays.toString(arrayBit));
     }
 }

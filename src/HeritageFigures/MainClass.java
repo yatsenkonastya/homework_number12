@@ -35,7 +35,7 @@ public class MainClass {
         System.out.println("Equals для трикутника: " + myTriangle.equals(myTriangle));
         System.out.println("Equals для трикутника та кола: " + myTriangle.equals(myCircle));
         System.out.println("Equals для прямокутника: " + myRectangle.equals(myRectangle));
-        System.out.println("Equals for прямокутника з різними назвами: " + myRectangle.equals(myRectangle1));
+        System.out.println("Equals для прямокутника з різними назвами: " + myRectangle.equals(myRectangle1));
         System.out.println("Equals для кола: " + myCircle.equals(myCircle1));
         System.out.println("Equals для кола та прямокутника : " + myCircle.equals(myRectangle) + "\n");
         System.out.println("Hashcode Трикутника: " + myTriangle.hashCode());

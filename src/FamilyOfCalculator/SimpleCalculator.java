@@ -11,7 +11,7 @@ public class SimpleCalculator {
     }
     public static void division (double a, double b){
         if(b == 0){
-            throw new ArithmeticException("We can't divide by zero");
+            throw new ArithmeticException("Sorry,we can't divide by zero");
         } else {
             System.out.println("Division: " + a + " / " + b + " = " + (a / b));
         }

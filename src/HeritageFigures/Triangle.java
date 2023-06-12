@@ -33,7 +33,7 @@ public class Triangle extends Shape {
     }
     @Override
     public String toString(){
-        return "Ця фігура " + name;
+        return "Ця фігура є " + name;
     }
 
     @Override
