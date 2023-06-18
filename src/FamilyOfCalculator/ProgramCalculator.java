@@ -6,7 +6,27 @@ public class ProgramCalculator extends SimpleCalculator{
     public ProgramCalculator(){
 
     }
-    public static void hexToBit(int numberHex) {
+    @Override
+    public void sum (double a, double b){
+        System.out.println("Sum: " + a + " + " + b + " = " + (a + b));
+    }
+    @Override
+    public void subtraction (double a, double b){
+        System.out.println("Subtraction: " + a + " - " + b + " = " + (a - b));
+    }
+    @Override
+    public void division (double a, double b){
+        if(b == 0){
+            throw new ArithmeticException("Sorry,we can't divide by zero");
+        } else {
+            System.out.println("Division: " + a + " / " + b + " = " + (a / b));
+        }
+    }
+    @Override
+    public void multiplication (double a, double b){
+        System.out.println("Multiplication: " + a + " * " + b + " = " + (a * b));
+    }
+    public void hexToBit(int numberHex) {
 
         int printNumberHex = numberHex;
 
