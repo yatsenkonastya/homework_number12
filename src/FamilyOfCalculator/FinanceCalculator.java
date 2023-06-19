@@ -5,8 +5,8 @@ public class FinanceCalculator extends SimpleCalculator  {
 
     }
     @Override
-    public void sum (double a, double b){
-        System.out.println("Sum: " + a + " + " + b + " = " + (a + b));
+    public void summ (double a, double b){
+        System.out.println("Summ: " + a + " + " + b + " = " + (a + b));
     }
     @Override
     public void subtraction (double a, double b){
@@ -14,10 +14,10 @@ public class FinanceCalculator extends SimpleCalculator  {
     }
     @Override
     public void division (double a, double b){
-        if(b == 0){
-            throw new ArithmeticException("Sorry,we can't divide by zero");
-        } else {
+        try {
             System.out.println("Division: " + a + " / " + b + " = " + (a / b));
+        } catch (ArithmeticException e) {
+            System.out.println("Sorry,we can't divide by zero" + e.getMessage());
         }
     }
     @Override

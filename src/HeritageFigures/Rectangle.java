@@ -31,11 +31,11 @@ public class Rectangle extends Shape {
     public void calculatePerimeter(){
         super.calculatePerimeter();
         perimeterOfRectangle = 2 * (calculateSide(x3, y3, x2, y2) + calculateSide(x2, y2, x1, y1));
-        System.out.println("Периметр " + this.name + " буде дорівнювати " + perimeterOfRectangle);
+        System.out.println("Периметр фігури " + this.name + " буде дорівнювати " + perimeterOfRectangle);
     }
     @Override
     public String toString() {
-        return "Ця фігура " + this.name;
+        return "Ця фігура  " + this.name;
     }
     @Override
     public boolean equals(Object obj) {

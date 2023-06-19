@@ -11,9 +11,9 @@ public class MainCheck {
 
 
             System.out.println("Overrided functions for each calculator");
-            calculator.sum(6,9);
-            engineer.division(14, 8);
-            program.sum(3, 8);
+            calculator.summ(6,9);
+            engineer.division(7, 0);
+            program.summ(3, 8);
             financial.subtraction(9,4);
             account.multiplication(5,4);
             System.out.println("\n");

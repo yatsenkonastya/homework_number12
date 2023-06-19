@@ -30,7 +30,7 @@ public class Circle extends Shape {
     }
     @Override
     public String toString(){
-        return "Ця фігура є " + name;
+        return "Ця фігура " + name;
     }
     @Override
     public boolean equals(Object obj) {
