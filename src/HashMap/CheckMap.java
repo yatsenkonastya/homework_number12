@@ -18,6 +18,6 @@ public class CheckMap {
 
         }
         System.out.println("Test Text: " + text);
-        System.out.println("HashMap result: " + counterStr);
+        System.out.println("HashMapp result: " + counterStr);
     }
 }

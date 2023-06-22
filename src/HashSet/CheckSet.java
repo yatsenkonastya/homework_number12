@@ -15,7 +15,7 @@ public class CheckSet {
         HashSet<String> uniqueWords = new HashSet<>(Arrays.asList(value));
         for (int i = 0; i < value.length - 1; i++) {
             for (int n = i + 1; n < value.length; n++) {
-                if (value[i].equalsIgnoreCase(value[n]) == 0) {
+                if (value[i].compareToIgnoreCase(value[n]) == 0) {
                     if (uniqueWords.contains(value[i])) {
                         uniqueWords.remove(value[n]);
                     }
@@ -23,6 +23,6 @@ public class CheckSet {
             }
         }
         System.out.println("Test Text: " + str);
-        System.out.println("Unique words: " + uniqueWords);
+        System.out.println("Unique word: " + uniqueWords);
     }
 }
