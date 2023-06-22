@@ -23,6 +23,6 @@ public class CheckSet {
             }
         }
         System.out.println("Test Text: " + str);
-        System.out.println("Unique word: " + uniqueWords);
+        System.out.println("Unique words: " + uniqueWords);
     }
 }
