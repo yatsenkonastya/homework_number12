@@ -14,13 +14,13 @@ public class MainPeople {
             }
             System.out.println(Arrays.toString(arrayList.toArray()));
 
-            // first variant with arrayList
             long neededTime = System.currentTimeMillis();
+
+            // first variant with arrayList
             people.removePerson(arrayList);
             System.out.println("Needed time for ArrayList: " + ((double) System.currentTimeMillis() - neededTime));
 
             // second variant with linkedList
-            neededTime = System.currentTimeMillis();
             people.removePerson(linkedList);
             System.out.println("Needed time for LinkedList: " + ((double) System.currentTimeMillis() - neededTime));
         } else System.out.println("Something going wrong, please change the number of people and try again!");
