@@ -3,21 +3,21 @@ import java.util.*;
 
 public class MainPeople {
     public static void main(String[] args) {
-        int N = 71;
+        int N = 73;
         CircleWithPeople people = new CircleWithPeople();
         List<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
         if (N > 0) {
             for (int i = 0; i < N; i++) {
                 arrayList.add(i + 1);
+                linkedList.add(i + 1);
             }
-            linkedList.addAll(arrayList);
             System.out.println(Arrays.toString(arrayList.toArray()));
 
             // first variant with arrayList
             long neededTime = System.currentTimeMillis();
             people.removePerson(arrayList);
-            System.out.println("Needed time for ArrayList: " + ((double) System.currentTimeMillis() - neededTime) + "\n");
+            System.out.println("Needed time for ArrayList: " + ((double) System.currentTimeMillis() - neededTime));
 
             // second variant with linkedList
             neededTime = System.currentTimeMillis();

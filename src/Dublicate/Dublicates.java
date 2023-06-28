@@ -25,6 +25,6 @@ public class Dublicates {
 
         System.out.println("Collection without duplicates");
         System.out.println(Arrays.toString(listWithoutDuplicates.toArray()));
-        System.out.println("Number of duplicates: " + count);
+        System.out.println("Number of duplicate: " + count);
     }
 }
