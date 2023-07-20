@@ -42,7 +42,7 @@ public class Main{
             });
             return list;
         };
-        System.out.println(lambdaInterface.printablle(printable));
+        System.out.println(lambdaInterface.printable(printable));
         System.out.println("\n");
 
 

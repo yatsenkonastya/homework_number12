@@ -14,6 +14,6 @@ public class Book {
         return ("Name of this book is " + this.title);
     }
     public void print(){
-        System.out.println("One of the books");
+        System.out.println("One of the books is");
     }
 }

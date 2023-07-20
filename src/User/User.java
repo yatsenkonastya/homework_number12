@@ -20,7 +20,7 @@ public class User {
     }
     @Override
     public String toString(){
-        return "First name: " + firstName + " -Second name:" + secondName + " -Age: " + age;
+        return "First name: " + firstName + " - Second name:" + secondName + " - Age: " + age;
     }
     public void sortByName(List <User> list){
         //first variant for FirstName

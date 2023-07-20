@@ -11,7 +11,7 @@ public class Magazine {
         return this.title;
     }
     public void print(){
-        System.out.println("One of the magazines");
+        System.out.println("One of the magazines is");
     }
     @Override
 
