@@ -1,37 +1,38 @@
 import Printable.Book;
 import Printable.Magazine;
-import Printable.Printable;
+import Printable.Printablle;
 import User.User;
 import java.util.*;
 public class Main{
     public static void main(String[] args) {
         User users = new User();
         List<User> names = Arrays.asList(
-                new User("Don", "Dalton", 8),
-                new User("Ron", "Joker", 35),
-                new User("Anya", "Berta", 9),
-                new User("Cem", "Kort", 11),
-                new User("Vadim", "Stevenson", 66),
-                new User("Kolya", "Largo", 32),
-                new User("Stepan", "Voila", 25),
-                new User("Stefan", "Portray", 23),
-                new User("Andrey", "Knyazev", 23),
-                new User("Miha", "Gorsuch", 39)
+                new User("Stas", "Wales", 16),
+                new User("Harry", "Potter", 22),
+                new User("Ron", "Wizzly", 15),
+                new User("Draco", "Malfoy", 25),
+                new User("Viola", "Jones", 11),
+                new User("Asya", "Yatsenko", 23),
+                new User("Victoria", "Rosso", 82),
+                new User("Nicola", "Dobrev", 56),
+                new User("Vanya", "Kariton", 14),
+                new User("Olesya", "Second", 17)
         );
-        users.sortListByName(names);
-//        users.sortListByAge(names);
-        users.averageAgeByUsers(names);
+        users.sortByName(names);
+        users.sortByAge(names);
+        users.averageUsersAge(names);
         users.usersUpperThanEighteen(names);
-        users.usersFirstLetterS(names);
+        users.usersStartSOrA(names);
 
         List<Object> printable = Arrays.asList(
-                new Book("bookOne"),
-                new Book("bookTwo"),
-                new Magazine("magazineOne"),
-                new Magazine("magazineTwo"),
-                new Book("bookThree"));
+                new Book("The Great Gatsby"),
+                new Book("The Bible"),
+                new Magazine("Phoenix"),
+                new Magazine("The National Trust"));
+//                new Book("bookThree"));
 
-        Printable lambdaInterface = (list)-> {
+
+        Printablle lambdaInterface = (list)-> {
             list.forEach(edition -> {
                 if (edition instanceof Book) {
                     System.out.println(edition);
@@ -41,16 +42,21 @@ public class Main{
             });
             return list;
         };
-        System.out.println(lambdaInterface.printable(printable));
-        System.out.println("-------------------------------------");
+        System.out.println(lambdaInterface.printablle(printable));
+        System.out.println("\n");
 
 
         List<Book> books = Arrays.asList(
-                new Book("bookOne"),
-                new Book("bookTwo"),
-                new Book("bookThree")
+                new Book("firstBook"),
+                new Book("secondBook")
         );
         books.forEach(Book::print);
+
+        List<Magazine> magazines = Arrays.asList(
+                new Magazine("firstMagazine"),
+                new Magazine("secondMagazine")
+        );
+        magazines.forEach(Magazine::print);
 
     }
 }

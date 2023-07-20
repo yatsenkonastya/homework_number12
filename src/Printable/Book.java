@@ -11,9 +11,9 @@ public class Book {
     }
     @Override
     public String toString(){
-        return ("This is book: " + this.title);
+        return ("Name of this book is " + this.title);
     }
     public void print(){
-        System.out.println("This is book!");
+        System.out.println("One of the books");
     }
 }

@@ -11,12 +11,12 @@ public class Magazine {
         return this.title;
     }
     public void print(){
-        System.out.println("This is Magazine!");
+        System.out.println("One of the magazines");
     }
     @Override
 
     public String toString() {
-        return ("This is magazine: " + this.title);
+        return ("Name of this magazine is " + this.title);
     }
 
 }
